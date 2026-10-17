@@ -6,7 +6,8 @@
   wichtig für Hörspielreihen wie Benjamin Blümchen, Die drei ??? oder TKKG.
 - Hörspielreihen werden **nach Folgennummer sortiert, neueste oben**
   (`Folge 172: …`, `054/…`, `02: …`, `Folgen 48-52: …`), danach Unterreihen
-  (`Benjamin Minis - Folge 2: …`), danach Specials in Spotify-Reihenfolge.
+  (`Benjamin Minis - Folge 2: …`; trägt die Unterreihe den Namen des Interpreten, zählt sie
+  zur Hauptreihe), danach Specials in Spotify-Reihenfolge.
   Alben, auf denen der Interpret nur mitwirkt, zählen nicht als Folge und stehen hinten.
   Interpreten ohne nummerierte Folgen (normale Musik) bleiben in Spotify-Reihenfolge.
 
@@ -24,5 +25,9 @@ Integration hinzufügen → „Spotify: alle Folgen“*.
 ## Tests
 
 ```
-uv run -q --no-project --python 3.14 --with spotifyaio==2.0.2 python tests/test_overlay.py
+uv run -q --no-project --python 3.14 --with spotifyaio==2.0.2 --with pytest pytest tests
 ```
+
+Ändert ein Home-Assistant-Update die Bibliothek `spotifyaio` so, dass die Überlagerung
+nicht mehr greift, meldet der Eintrag das unter *Einstellungen → Integrationen* als Fehler,
+statt still die alte 48-Alben-Liste zu zeigen.
