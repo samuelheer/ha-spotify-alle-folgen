@@ -1,0 +1,14 @@
+{
+  "domain": "spotify_alle_folgen",
+  "name": "Spotify: alle Folgen",
+  "codeowners": ["@samuelheer"],
+  "config_flow": true,
+  "dependencies": ["spotify"],
+  "documentation": "https://github.com/samuelheer/ha-spotify-alle-folgen",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/samuelheer/ha-spotify-alle-folgen/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

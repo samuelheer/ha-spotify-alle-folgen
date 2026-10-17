@@ -1,0 +1,12 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Bereits eingerichtet. Nur eine Instanz möglich."
+    },
+    "step": {
+      "user": {
+        "description": "Zeigt im Spotify-Medien-Browser alle Alben eines Interpreten (statt 48), sortiert nach Folgennummer, neueste oben."
+      }
+    }
+  }
+}

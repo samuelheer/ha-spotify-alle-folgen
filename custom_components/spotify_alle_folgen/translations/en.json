@@ -1,0 +1,12 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Already configured. Only a single configuration possible."
+    },
+    "step": {
+      "user": {
+        "description": "Shows all albums of an artist in the Spotify media browser (instead of 48), sorted by episode number, newest first."
+      }
+    }
+  }
+}
